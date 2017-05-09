@@ -23,10 +23,9 @@ public class MovieDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_details);
+
         Bundle bundle = this.getIntent().getExtras();
         long movieId = bundle.getLong("movieId");
-//        Button button = (Button) findViewById(R.id.button);
-//        button.setText("You have tapped row ... #" + row_id);
 
         columnsToSelect = new String[] {
                 MoviesSQLiteHelper.COLUMN_ID,

@@ -59,12 +59,8 @@ public class MainActivity extends ListActivity {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-
         Intent movieDetailsIntent = new Intent(this, MovieDetails.class);
-
         movieDetailsIntent.putExtra("movieId", id);
-
         startActivity(movieDetailsIntent);
-
     }
 }
